@@ -37,7 +37,6 @@ public class MyList<E> {
         for (int i = 0;i<size;i++){
             if (e.equals(data[i]))
                 return true;
-            return false;
         }
         return false;
     }
@@ -56,13 +55,13 @@ public class MyList<E> {
     public int indexOf(E e){
         for (int i=0;i<size;i++) {
             if (e.equals(data[i])) return i;
-            return -1;
         }
         return 0;
     }
 
     public int lastIndexOf(E e){
-        for (int i = size - 1; i >= 0; i--) if (e.equals(data[i])) return i;
+        for (int i = size - 1; i >= 0; i--)
+            if (e.equals(data[i])) return i;
         return -1;
     }
 

@@ -3,6 +3,7 @@ public class MyListTest {
         MyList<String> list = new MyList<>();
         list.add("America");
         list.add("Canada");
+        list.add("Germany");
         list.add("Russia");
         list.add("France");
         list.add("Germany");
@@ -13,6 +14,7 @@ public class MyListTest {
         //list.clear();
         System.out.println(list.contains("Germany"));
         System.out.println(list.get(3));
-        System.out.println(list.indexOf("America"));
+        System.out.println(list.indexOf("Germany"));
+        System.out.println(list.lastIndexOf("Germany"));
     }
 }
